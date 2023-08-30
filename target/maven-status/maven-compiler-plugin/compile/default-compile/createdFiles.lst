@@ -1,0 +1,6 @@
+org\example\common\ChunkUploadResult.class
+org\example\common\UploadConstants.class
+org\example\entity\MultipartFileDTO.class
+org\example\service\FileUploadService.class
+org\example\config\ChunkUploadConfiguration.class
+org\example\service\impl\FileUploadServiceImpl.class

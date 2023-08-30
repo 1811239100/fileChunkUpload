@@ -1,0 +1,71 @@
+<!--
+ * @Author: 陈凯（实习） 1264504656@qq.com
+ * @Date: 2023-08-22 10:23:48
+ * @LastEditors: 陈凯（实习） 1264504656@qq.com
+ * @LastEditTime: 2023-08-23 09:39:40
+ * @FilePath: \MD5校验\index.html
+ * @Description: 
+ * 
+ * Copyright (c) 2023 by ${git_name_email}, All Rights Reserved. 
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>大文件秒传</title>
+    <link rel="stylesheet" type="text/css" href="./css/webuploader.css" />
+  </head>
+  <body>
+    <section>
+      <div id="uploader">
+        <!--用来存放文件信息-->
+        <div id="thelist" class="uploader-list"></div>
+        <!-- 存放按钮 -->
+        <div class="btns container">
+          <div
+            id="filePicker"
+            class="webuploader-container"
+            style="float: left; margin-right: 10px"
+          >
+            <div>
+              选择文件
+              <input
+                type="file"
+                name="file"
+                class="webuploader-element-invisible"
+                multiple="multiple"
+              />
+            </div>
+          </div>
+          <div
+            id="UploadBtn"
+            class="webuploader-pick"
+            style="float: left; margin-right: 10px"
+          >
+            开始上传
+          </div>
+          <div
+            id="StopBtn"
+            class="webuploader-pick"
+            style="float: left; margin-right: 10px"
+            status="suspend"
+          >
+            暂停上传
+          </div>
+        </div>
+        <!-- 打印MD5值 -->
+        <div id="log">
+          <strong>文件的MD5值</strong>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/webuploader.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.bootcss.com/qs/6.7.0/qs.min.js"></script>
+  </body>
+</html>
